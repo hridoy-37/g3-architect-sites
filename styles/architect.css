@@ -17,6 +17,11 @@
     cursor: text;
     margin-bottom: 22px;
 }
+.section-title{
+    color: #131313;
+    font-size: 2.8em;
+    font-weight: 700;
+}
 header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px8
@@ -26,11 +31,7 @@ nav{
     justify-content: space-between;
     align-items:center;
 }
-.nav-title{
-    color: #131313;
-    font-size: 2.8em;
-    font-weight: 700;
-}
+
 nav > ul{
     display: flex;
     justify-content: space-between;
