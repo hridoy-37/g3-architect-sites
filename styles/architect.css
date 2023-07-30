@@ -212,6 +212,9 @@ main{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .footer{
+        max-width: 400px;
+    }
 }
 /* responsive MEDIUM device */
 @media screen and (min-width:576px) and (max-width:992px) {
