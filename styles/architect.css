@@ -96,9 +96,10 @@ main{
 }
 
 /* features sectionn starts here */
-.facts-card-container{
+.facts-card-container, .sponsor-img-container{
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
 .facts-card-container .card{
     border-radius: 8px;
@@ -119,27 +120,49 @@ main{
     margin-top: 5px;
 }
 
+/* sponsors styles start here */
+.sponsor{
+    text-align: center;
+}
+.sponsor-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+    align-items: center;
+}
+.sponsor-img-container img{
+    width: 165px;
+}
 /* responsive styles */
+/* resonsive MOBILE device */
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav, .teams-container{
+    nav, 
+    .teams-container
+    .facts-card-container,
+    .sponsor-img-container{
         flex-direction: column;
+        gap: 20px;
     }
     .teams-image-container{
         grid-template-columns: 1fr;
     }
-    .teams-content{
+    .teams-content
+    .facts-card-container{
         padding-left: 20px;
         padding-right: 20px;
     }
 }
+/* responsive MEDIUM device */
 @media screen and (min-width:576px) and (max-width:992px) {
     header{
         padding: 50px;
     }
-    nav, .teams-container{
+    nav, .teams-container,
+    .sponsor-img-container{
         flex-direction: column;
     }
 }
